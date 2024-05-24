@@ -1,0 +1,500 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.Grid {
+    position: absolute;
+    background-color: #FFFAFA;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0.7fr 1.1fr 1.1fr 1.1fr;
+    grid-template-rows: 0.07fr 1fr;
+    gap: 5px;
+}
+
+.User {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+
+/*Sidebar and it's content ******************************************************/
+
+.container-1 {
+    background-color: #faf2f2;
+    grid-area: 1 / 1 / 3 / -4;
+    padding: 0;
+    margin: 0;
+    width: 260px;
+    height: 100%;
+    transition: .3s;
+}
+
+.container-1.active {
+    width: 10px;
+    background-color: white;
+}
+
+.toggle-btn {
+    position: absolute;
+    margin-left: -18px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.side-labels {
+    margin-left: -20px;
+}
+
+.side-labels .nav-link a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+.side-labels .nav-link a i {
+    margin-top: 4px;
+    margin-right: 7px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.side-labels .nav-link a:hover {
+    /*   background: rgba(253, 2, 2, 0.2);*/
+    background-color: grey;
+    color: #fff;
+    padding-left: 10px;
+    width: 180px;
+    height: 30px;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+.nav-link.active {
+    background-color: rgba(255, 0, 0, 0.075);
+    width: 180px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.nav-link.active a {
+    color: rgb(211, 0, 0);
+}
+
+
+/* for makind sidebar desapear*************************************************************/
+
+.container-1 .sidebar {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.container-1.active .sidebar {
+    opacity: 0;
+    pointer-events: none;
+    transition: .1s;
+}
+
+.container-1 .toggle-btn {
+    opacity: 1;
+    pointer-events: auto;
+    left: 250px;
+    transition: 0.1s;
+}
+
+.container-1.active .toggle-btn {
+    opacity: 1;
+    pointer-events: auto;
+    left: 30px;
+    transition: .3s;
+}
+
+.dropdown {
+    position: absolute;
+    display: flex;
+    /*margin-left: 18px; */
+    gap: 0;
+}
+
+.Favorites {
+    display: flex;
+    gap: 0;
+    padding-top: 10px;
+    margin-bottom: 50px;
+}
+
+.dropdown-item {
+    background: #fff;
+    padding: 5px;
+    color: #34495e;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.dropdown-item:hover {
+    background-color: grey;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.search-setting input[type="search "] {
+    margin: 20px auto;
+    display: block;
+    width: 100%;
+    border: 1px solid grey;
+    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.1);
+}
+
+.search-setting {
+    display: flex;
+    margin-top: -30px;
+    margin-left: 15px;
+}
+
+.close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: #fff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+.setting {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.setting-content {
+    height: 90%;
+    width: 80%;
+    background: white;
+    border-radius: 5px;
+    position: relative;
+}
+
+.setting-list {
+    margin-top: -20px;
+}
+
+.fa-bell {
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+
+/* For switching Pages ********************************************************/
+
+.wrapper {
+    position: relative;
+    width: 960px;
+    padding: 10px;
+}
+
+section {
+    background: #FFFAFA;
+    display: none;
+    top: 10px;
+    right: 10px;
+    min-height: 400px;
+}
+
+section:first-of-type {
+    display: block;
+}
+
+nav {
+    float: left;
+    width: 200px;
+}
+
+.Page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 100px;
+    box-sizing: border-box;
+}
+
+
+/* AddTask and its content *************************************************************************************************/
+
+.Addtask {
+    margin-top: 60px;
+    background-color: 0;
+    margin-left: -18px;
+}
+
+.Addtask a {
+    display: flex;
+    align-items: center;
+    color: rgb(223, 2, 2);
+    font-size: 16px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.Addtask i {
+    display: flex;
+    margin-right: 7px;
+    color: white;
+    background-color: rgb(223, 2, 2);
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.Addtask a:hover {
+    background-color: grey;
+    color: #fff;
+    padding-left: 10px;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.Task {
+    position: absolute;
+    margin-top: -240px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    border-radius: 5px;
+    width: 600px;
+    height: 200px;
+    background: white;
+    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+    z-index: 9999;
+    /* High z-index to appear above other content */
+}
+
+.Task-content {
+    border-radius: 10px;
+    text-align: center;
+}
+
+.Task-content input[type="text"] {
+    width: 550px;
+    height: 45px;
+    padding: 12px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+
+/*.Task-content input[type="text1"] {
+    width: 550px;
+    margin-left: 15px;
+    margin-top: 5px;
+    border: none;
+    font-size: 14px;
+}
+*/
+
+.Task.show {
+    opacity: 1;
+    /* When the class 'show' is added, change opacity to 1             */
+}
+
+.Task-content button[type="button"] {
+    position: absolute;
+    width: 85px;
+    height: 32px;
+    background-color: rgb(223, 2, 2);
+    color: white;
+    margin-top: 154px;
+    margin-left: 200px;
+    border-color: rgb(223, 0, 0);
+    border-radius: 5px;
+}
+
+.Task-content button[type="button"]:hover {
+    width: 87px;
+    background-color: rgb(175, 0, 0);
+    border-color: rgb(175, 0, 0);
+}
+
+.close1 {
+    position: absolute;
+    background-color: rgb(245, 245, 245);
+    width: 85px;
+    height: 32px;
+    border-radius: 5px;
+    margin-top: 154px;
+    margin-left: 100px;
+    border-color: rgb(240, 240, 240);
+    cursor: pointer;
+}
+
+.close1:hover {
+    width: 87px;
+    background-color: rgb(221, 220, 220);
+}
+
+.Page ul {
+    list-style: none;
+}
+
+.Overdue {
+    margin-top: 40px;
+    margin-left: 120px;
+}
+
+
+/*Collapse *************************************************************************************************************************/
+
+.collapsible {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #ccc;
+}
+
+
+/* For Tasks and deleting icon/////////////////////////////////////////////////////////////////////////////////////////////*/
+
+.Today {
+    margin-top: 40px;
+    border-radius: 10px;
+    width: 40%;
+    min-width: 450px;
+    min-height: 100px;
+}
+
+#tasks {
+    flex-grow: 1;
+    /* overflow-y: auto; /* Scroll if content overflows */
+    border-radius: 10px;
+    padding: 30px 20px;
+    margin-left: -30px;
+}
+
+
+/* Ensure the task list and its contents have a lower z-index */
+
+#tasks .task {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Style for task list items */
+
+#tasks .task {
+    flex-grow: 1;
+    width: 550px;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+    border-radius: 4px;
+    border-bottom: 1px solid #ccc;
+    /*background-color: #f9f9f9;*/
+}
+
+#tasks .task .delete {
+    margin-right: 10px;
+}
+
+#tasks .task hr {
+    margin-top: 10px;
+    width: 100%;
+    /* Ensure the horizontal line spans the full width */
+}
+
+.task {
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.task button {
+    background-color: white;
+    color: rgb(116, 116, 116);
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.task button i {
+    color: white;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+}
+
+.task button i:hover {
+    transition: .2s;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.icounter {
+    color: rgb(116, 116, 116);
+    border-radius: 50%;
+    border: 1px solid;
+    padding: 2px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.collapsibleAddTask {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.active,
+.collapsibleAddTask:hover {
+    background-color: #ccc;
+}
+
+
+/* Style the Search content. */

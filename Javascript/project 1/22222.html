@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TODO App</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+</head>
+<style>
+    .center {
+        align-self: center;
+    }
+    
+    .flow-right {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        height: 100vh;
+    }
+    
+    .title,
+    .controls,
+    .button {
+        flex: none;
+    }
+    
+    .button {
+        padding: 10px 20px;
+    }
+</style>
+
+<body>
+    <div class="container center">
+        <h1 class="center title">My TODO App</h1>
+        <div class="flow-right controls">
+            <span>Item count: <span id="item-count">0</span></span>
+            <span>Unchecked count: <span id="unchecked-count">0</span></span>
+        </div>
+        <button class="button center" onClick="newTodo()">New TODO</button>
+        <ul id="todo-list" class="todo-list"></ul>
+
+
+
+
+        <input type="text" id="myInput" placeholder="Search for a class..." title="Type something">
+        <p class="results">Results</p>
+        <p id="totalClasess"></p>
+        <ul id="myUl">
+            <li><a href="#" class="header">Section 1</a></li>
+            <li><a href="#">Class 1 </a></li>
+            <li><a href="#">Class 2</a></li>
+            <li><a href="#">Class 3</a></li>
+        </ul>
+
+    </div>
+
+
+    <script>
+        const todos = []
+        let newTodoId = 0
+        let checkboxes
+        let checkboxArray
+
+        const classNames = {
+            TODO_ITEM: 'todo-container',
+            TODO_CHECKBOX: 'todo-checkbox',
+            TODO_TEXT: 'todo-text',
+            TODO_DELETE: 'todo-delete',
+        }
+
+        const list = document.getElementById('todo-list')
+        const uncheckedCountSpan = document.getElementById('unchecked-count')
+
+
+
+
+
+        const itemCountSpan = document.getElementById('item-count')
+
+
+        function newTodo() {
+            let getTodo = prompt("Add new to-do", "")
+
+            if (getTodo == null || getTodo == "") {
+                console.log("you don't add new to-do")
+            } else {
+                todos.push({
+                    id: newTodoId++,
+                    text: getTodo,
+                    isChecked: false,
+                })
+                drawTodoList()
+            }
+        }
+
+
+
+        function drawTodoList() {
+            const liItem = todos.map((todo) => {
+                if (!todo.isChecked) {
+                    return `<li id=${todo.id} class=${classNames.TODO_ITEM}>
+    <input type='checkbox' class=${classNames.TODO_CHECKBOX}>${todo.text}</li>`
+                } else {
+                    return `<li id=${todo.id} class=${classNames.TODO_ITEM}>
+    <input type='checkbox' class=${classNames.TODO_CHECKBOX} checked>${todo.text}</li>`
+                }
+            })
+            list.innerHTML = liItem.join('')
+
+            checkboxes = document.querySelectorAll('input[type=checkbox]')
+            checkboxArray = Array.from(checkboxes)
+            checkboxArray.forEach(function(checkbox) {
+                checkbox.addEventListener('change', confirmCheck)
+            })
+            countItem()
+        }
+
+        function confirmCheck() {
+            let checkedToDo = todos.find(todo => {
+                return todo.id == this.parentElement.id
+            })
+            checkedToDo.isChecked = !checkedToDo.isChecked
+            countItem()
+        }
+
+        function countItem() {
+            let itemCount = document.querySelectorAll('input[type="checkbox"]').length
+            let checkedCount = document.querySelectorAll('input[type="checkbox"]:checked').length
+            let uncheckedCount = itemCount - checkedCount
+            itemCountSpan.innerHTML = itemCount
+            uncheckedCountSpan.innerHTML = uncheckedCount
+        }
+
+
+
+
+        //************************************************************************************************
+        var ip = document.getElementById('myInput');
+        var ul = document.getElementById('myUl');
+        var li = ul.getElementsByTagName('li');
+
+        document.getElementById('totalClasess').innerHTML = (li.length) + " Results";
+
+        ip.addEventListener('input', function() {
+            var val = this.value.toUpperCase(),
+                idx = 0;
+
+            for (var i = 0; i < li.length; i++) {
+                var txt = li[i].textContent.toUpperCase();
+
+                if (txt.indexOf(val) != -1) {
+                    li[i].style.display = 'block';
+                    idx++;
+                } else {
+                    li[i].style.display = 'none';
+                }
+
+                document.getElementById('totalClasess').innerHTML = idx + " Results";
+            }
+        });
+    </script>
+</body>
+
+</html>

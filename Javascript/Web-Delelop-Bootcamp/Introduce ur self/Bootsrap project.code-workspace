@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"path": "../Bootsrap project"
+		},
+		{
+			"path": "../Flex"
+		},
+		{
+			"path": "../Flex-direction"
+		},
+		{
+			"path": "../Grid"
+		},
+		{
+			"path": "../Project 1 Flexbox Pricing Table Project"
+		},
+		{
+			"path": "../Project 2 Grid Mondrian Painting"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Introduce ur self"
+	}
+}
