@@ -1,0 +1,209 @@
+body {
+    background: linear-gradient(0.3deg, rgb(30, 161, 239) 0.9%, rgb(49, 46, 252) 88.6%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 500px;
+    height: 700px;
+    margin-top: 80px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 1);
+}
+
+.content {
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+body input[type="email"] {
+    height: 45px;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+input {
+    height: 45px;
+}
+
+.inputpassword {
+    position: relative;
+    height: 45px;
+    width: 400px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.password_visible {
+    display: none;
+}
+
+.inputpassword.active .password_invisible {
+    display: none;
+}
+
+.inputpassword.active .password_visible {
+    display: block;
+}
+
+.inputpassword img {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.confirmpassword {
+    position: relative;
+    height: 45px;
+    width: 400px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.confirmpassword.active .password_invisible {
+    display: none;
+}
+
+.confirmpassword.active .password_visible {
+    display: block;
+}
+
+.confirmpassword img {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.forgot {
+    justify-content: center;
+    width: 200px;
+    margin-left: 100px;
+    font-weight: bold;
+    color: rgb(0, 174, 255);
+    background-color: white;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.forgot:hover {
+    background-color: #006DB5;
+    color: white;
+    border-radius: 5px;
+}
+
+.login {
+    font-weight: bold;
+    height: 45px;
+    width: 400px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.content li {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.signup {
+    color: rgb(0, 174, 255);
+    font-weight: bold;
+    border: none;
+    background-color: white;
+}
+
+.signup:hover {
+    background-color: #006DB5;
+    color: white;
+    border-radius: 5px;
+}
+
+.hr-text {
+    position: relative;
+    border: 0;
+    color: black;
+    text-align: center;
+    opacity: 0.5;
+    margin-bottom: 20px;
+    &:before {
+        content: '';
+        background: black;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 1px;
+    }
+    &:after {
+        content: attr(data-content);
+        position: relative;
+        display: inline-block;
+        color: black;
+        padding: 0 0.5em;
+        background-color: #fcfcfa;
+    }
+}
+
+.facebook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(55, 55, 240);
+    color: white;
+    font-weight: bold;
+    height: 45px;
+    width: 400px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.facebook:hover {
+    background-color: blue;
+}
+
+.google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: grey;
+    font-weight: bold;
+    height: 45px;
+    width: 400px;
+    border-color: rgba(240, 248, 255, 0.685);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.google:hover {
+    background-color: rgba(240, 248, 255, 0.685);
+    color: black;
+}
+
+.google-image {
+    margin-left: -100px;
+    margin-right: 100px;
+}
+
+.facebook-image {
+    margin-left: -90px;
+    margin-right: 90px;
+    border-radius: 50%;
+    background-color: white;
+}
