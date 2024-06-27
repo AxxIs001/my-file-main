@@ -23,10 +23,13 @@ document.addEventListener("DOMContentLoaded", function() {
             if (buttonText === 'AC') {
                 displayValue = '';
                 display.textContent = '0';
-            } else if (buttonText === '+/-') {
+            } else if (buttonText === 'DE') {
                 if (displayValue) {
-                    displayValue = displayValue.startsWith('-') ? displayValue.substring(1) : '-' + displayValue;
+                    displayValue = displayValue.toString().slice(0, -1);
                     display.textContent = displayValue;
+                    if (displayValue === "") {
+                        display.textContent = "0";
+                    }
                 }
             } else if (buttonText === '%') {
                 displayValue = (parseFloat(displayValue) / 100).toString();
