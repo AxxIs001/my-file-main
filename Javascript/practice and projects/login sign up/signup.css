@@ -106,7 +106,7 @@ input {
     border-radius: 5px;
 }
 
-.login {
+.signup {
     font-weight: bold;
     height: 45px;
     width: 400px;
@@ -120,14 +120,14 @@ input {
     list-style: none;
 }
 
-.signup {
+.login {
     color: rgb(0, 174, 255);
     font-weight: bold;
     border: none;
     background-color: white;
 }
 
-.signup:hover {
+.login:hover {
     background-color: #006DB5;
     color: white;
     border-radius: 5px;
