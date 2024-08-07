@@ -1,0 +1,118 @@
+body {
+    background-color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.magicBall {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 50%;
+}
+
+.answer {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 52%;
+    width: 14%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.askBtn {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 85%;
+    left: 50%;
+}
+
+.askBtn button {
+    width: 500px;
+    height: 60px;
+    background-color: rgb(248, 61, 48);
+    color: white;
+    font-size: 30px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.title {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 8%;
+    left: 55%;
+}
+
+.title h1 {
+    width: 500px;
+    font-size: 40px;
+}
+
+.title span {
+    color: red;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.cannot,
+.predict-now {
+    display: block;
+}
+
+
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.shake {
+    animation: shake 0.5s;
+    /* Animation duration */
+    animation-iteration-count: 1;
+    /* Run animation once */
+}

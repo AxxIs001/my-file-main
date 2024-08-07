@@ -1,0 +1,64 @@
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #8052ec, #d161ff);
+
+}
+
+.title {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 23%;
+    left: 50%;
+    font-size: 45px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.title h1 {
+    margin-top: -30px;
+
+}
+
+.title h3 {
+    background-color: white;
+    color: black;
+    padding: 0 0 0 30px;
+    font-size: 40px;
+    width: 320px;
+}
+
+
+.clock {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+}
+
+.clock div {
+    position: relative;
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    border: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    font-weight: bolder;
+    color: rgb(22, 10, 75);
+}
+
+.clock span {
+    font-weight: bolder;
+    font-size: 100px;
+    margin: 30px 20px 0 20px;
+    color: white;
+
+}

@@ -1,0 +1,77 @@
+body {
+    background-color: #A9CDFD;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: #D7E9FE;
+    width: 35%;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+}
+
+.header {
+    font-size: 20px;
+    padding: 20px 0 10px 0;
+}
+
+.microBtn button {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #9F9FFC;
+    cursor: pointer;
+}
+
+.microBtn img {
+    width: 50px;
+}
+
+.microBtn p {
+    font-weight: bold;
+}
+
+textarea {
+    width: 500px;
+    height: 200px;
+    background-color: #e4ebf3;
+    border: 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 5px;
+    font-size: 18px;
+
+}
+
+.copyClearBtn {
+    padding: 20px 0 30px 0;
+}
+
+.copyClearBtn .copy {
+    width: 130px;
+    height: 35px;
+    margin-right: 10px;
+    border: 1px solid;
+    border-color: rgb(2, 136, 24);
+    border-radius: 8px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.copyClearBtn .clear {
+    width: 130px;
+    height: 35px;
+    margin-right: 10px;
+    border: 1px solid;
+    border-color: #862828;
+    border-radius: 8px;
+    background-color: #AF4C4C;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}

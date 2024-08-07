@@ -1,0 +1,35 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech Detection</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Speech to Text</h1>
+        </div>
+        <div class="microBtn" id="microBtn">
+            <button><img src="img/1082810.png"></button>
+            <p>Tap to Record</p>
+        </div>
+
+        <textarea placeholder="Your speech text will be written here..." id="textCopy"></textarea>
+        <div id="stopBtnContainer"></div>
+
+        <div class="copyClearBtn">
+            <button class="copy" id="copyButton">Copy Text</button>
+            <button class="clear" id="clearButton">Clear Text</button>
+
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
