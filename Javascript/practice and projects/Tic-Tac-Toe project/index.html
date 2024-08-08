@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <h1 class="header1">Player 1: <span>X</span></h1>
+    <h1 class="header2">Player 2: <span>0</span></h1>
+
+    <div class="container">
+        <button data-index="0"></button>
+        <button data-index="1"></button>
+        <button data-index="2"></button>
+        <button data-index="3"></button>
+        <button data-index="4"></button>
+        <button data-index="5"></button>
+        <button data-index="6"></button>
+        <button data-index="7"></button>
+        <button data-index="8"></button>
+    </div>
+    <div class="resetBtn">
+        <button onclick="reset()">Reset Game</button>
+    </div>
+    <div class="resetScore">
+        <button onclick="resetScores()">Reset Score</button>
+    </div>
+    <p class="plr1" id="plr1">Score: 0</p>
+    <p class="plr2" id="plr2">Score: 0</p>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
