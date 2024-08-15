@@ -10,6 +10,11 @@ function random() {
 
 }
 
+function refresh() {
+    window.location.reload();
+
+}
+
 
 function winnerDice() {
 
