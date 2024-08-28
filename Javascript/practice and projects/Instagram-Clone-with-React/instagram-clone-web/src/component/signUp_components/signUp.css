@@ -1,0 +1,158 @@
+.signUp-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.signUp-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+}
+
+.signup-form {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.signUp-container .logo {
+    width: 180px;
+}
+
+.signUp-container h2 {
+    font-size: 15px;
+    color: #8e8e8e;
+}
+
+.facebook-btn {
+    background-color: #0095f6;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.facebook-btn a {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+}
+
+.facebook-btn img {
+    position: absolute;
+    width: 25px;
+    margin-top: -5px;
+}
+
+.signUp-container .separator {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.signUp-container .line {
+    flex: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.signUp-container .or {
+    margin: 0 10px;
+    color: #8e8e8e;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.signUp-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signUp-container input[type="text"],
+.signUp-container input[type="password"] {
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    background-color: #fafafa;
+    font-size: 14px;
+    outline: none;
+}
+
+.signUp-container input:focus {
+    border: 1px solid rgb(155, 155, 155);
+}
+
+.signUp-container input::placeholder {
+    font-size: 12px;
+}
+
+.showHideBtn2 {
+    position: absolute;
+    background-color: rgb(248, 248, 248);
+    margin-top: 7.3%;
+    margin-left: 210px;
+    font-size: 14px;
+    border: 0;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.signup-btn {
+    background-color: rgb(0, 180, 235);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.signUp-container .terms {
+    font-size: 12px;
+    color: #8e8e8e;
+    margin-top: 10px;
+    text-align: center;
+    width: 260px;
+}
+
+.signUp-container .terms a {
+    color: #0095f6;
+    text-decoration: none;
+}
+
+.login-redirect {
+
+    border: 1px solid #dbdbdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 60px;
+    font-size: 14px;
+}
+
+.login-redirect a {
+    color: #0095f6;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.getTheApp {
+    position: absolute;
+    margin-top: 220px;
+    margin-left: 16%;
+}

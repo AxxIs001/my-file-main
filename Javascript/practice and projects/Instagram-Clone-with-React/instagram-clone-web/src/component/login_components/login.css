@@ -1,0 +1,248 @@
+.login-page {
+    background-image: url("../img/background-log.png");
+    display: flex;
+}
+
+.login-box {
+    width: 350px;
+    height: 420px;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin: 115px 0 0 980px;
+}
+
+
+.instImg {
+    margin: 40px 0 30px;
+}
+
+
+
+.login-box input {
+    width: 250px;
+    height: 35px;
+    margin-top: 10px;
+    background-color: rgb(248, 248, 248);
+    border: 1px solid rgb(212, 212, 212);
+    padding: 0 10px;
+    outline: none;
+}
+
+.login-box input:focus {
+    border: 1px solid rgb(155, 155, 155);
+}
+
+.login-box input::placeholder {
+    font-size: 12px;
+}
+
+
+
+.showHideBtn {
+    position: absolute;
+    background-color: rgb(248, 248, 248);
+    margin-top: -27px;
+    right: 610px;
+    /* Position the button from the right side */
+    font-size: 14px;
+    border: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.password button:hover {
+    color: #8e8e8e;
+}
+
+.screenshot-img {
+    margin: 133px 0 0 682px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.screenshot-img.active {
+    opacity: 1;
+}
+
+
+.logInBtn {
+    margin-top: 15px;
+    width: 270px;
+    height: 32px;
+    background-color: rgb(0, 132, 255);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.logInBtn:disabled {
+    background-color: rgb(0, 180, 235);
+    /* Gray background when disabled */
+    cursor: auto;
+    /* Change cursor to indicate the button is disabled */
+}
+
+
+
+.login-box .separator {
+    display: flex;
+    align-items: center;
+    margin: 20px 25px 0;
+    width: 300px;
+}
+
+.login-box .separator::before,
+.login-box .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ddd;
+    margin: 0 18px;
+}
+
+.login-box .separator span {
+    color: #8e8e8e;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.login-box .facebook-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 30px 0 13px;
+}
+
+.login-box .facebook-login a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #385185;
+}
+
+
+.login-box .facebook-login img {
+    margin-right: 10px;
+    width: 17px;
+}
+
+
+.login-box .forgot-password {
+    color: #00376b;
+    font-size: 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.signUpLink-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 60px;
+    border: 1px solid #ddd;
+    margin: 550px 0 0 -350px;
+    font-size: 14px;
+}
+
+.signUpLink-box button {
+    border: none;
+    color: rgb(0, 127, 231);
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.app-links {
+    text-align: center;
+    margin: 610px 0 0 -310px;
+    font-size: 14px;
+}
+
+.store-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.google-play {
+    width: 130px;
+    height: auto;
+}
+
+.microsoft-store {
+    width: 120px;
+    height: 40px;
+}
+
+
+.footer {
+    text-align: center;
+    margin-top: 120px;
+    padding: 10px 0;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #8e8e8e;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #8e8e8e;
+
+}
+
+#language-select {
+    margin-bottom: 5px;
+    padding: 3px;
+    border: none;
+    background-color: transparent;
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+.footer-bottom select {
+    margin-top: 5px;
+
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #8e8e8e;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+
+
+/* LoginBoxPage css styles */
+
+
+.loginPageBox {
+    display: flex;
+    margin-left: -10%;
+}

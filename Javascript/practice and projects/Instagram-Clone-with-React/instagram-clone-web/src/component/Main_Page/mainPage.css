@@ -1,0 +1,470 @@
+.main-page-body {
+    font-family: 'Proxima Nova', 'Helvetica Neue', Arial, sans-serif;
+    background-color: white;
+
+}
+
+.main-page-body .container {
+    display: flex;
+    max-width: 100%;
+    padding-top: 0;
+
+}
+
+/* Sidebar */
+.main-page-body .sidebar {
+    width: 295px;
+    border-right: 1px solid #dbdbdb;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.main-page-body .sidebar .logo img {
+    width: 105px;
+    margin-bottom: 45px;
+    display: block;
+    /* Ensure the image is treated as a block-level element */
+    margin-left: 0;
+}
+
+
+.main-page-body .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    margin-top: -5px;
+}
+
+
+
+.main-page-body .sidebar nav ul li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    height: 45px;
+    width: 300px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    margin-left: -6px;
+    border-radius: 10px;
+}
+
+.main-page-body .sidebar nav ul li a:focus {
+    font-weight: 600;
+}
+
+.main-page-body .sidebar nav ul li a:hover {
+    background-color: #7575751e;
+    transition: 0.3s;
+}
+
+.main-page-body .sidebar nav ul li a img {
+    width: 22px;
+    height: 22px;
+    margin-right: 15px;
+}
+
+
+.main-page-body .sidebar nav ul li a .profile-avatar {
+    width: 26px;
+    height: 26px;
+    margin-left: -4px;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: #8e8e8e7a;
+}
+
+.main-page-body .sidebar nav .bottom-navbar {
+    margin-top: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Main Content */
+.story-mainContent {
+    margin-left: 20%;
+    width: 100%;
+    margin-top: -130px;
+}
+
+
+.main-page-body .main-content {
+    display: flex;
+
+}
+
+/* Feed Section */
+.main-page-body .feed {
+    margin-right: 10%;
+    margin-top: -20px;
+}
+
+.main-page-body .post {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 480px;
+    border-bottom: 1px solid #8e8e8e65;
+
+}
+
+.main-page-body .post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.main-page-body .profile-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.main-page-body .post-user-info {
+    display: flex;
+}
+
+.main-page-body .username {
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.main-page-body .post-time {
+    color: #8e8e8e;
+    font-size: 0.9em;
+}
+
+.main-page-body .post-time li span {
+    margin-left: -5px;
+}
+
+.main-page-body .post-image .posted-img {
+    width: 100%;
+    /*height: 580px;*/
+    margin-bottom: 10px;
+}
+
+.main-page-body .post-actions {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.main-page-body .post-actions span {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.main-page-body .post-actions span img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.main-page-body .post-actions span .heart-white {
+    width: 1.1em;
+}
+
+.main-page-body .post-actions span .bookmarkBtn {
+    margin-left: 350px;
+    width: 1.0em;
+}
+
+
+
+.main-page-body .comment-section {
+    display: flex;
+    margin-top: -20px;
+}
+
+.main-page-body .comment-section input {
+    font-size: 14px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    margin-left: -7px;
+}
+
+.main-page-body .postBtn {
+    border: none;
+    background-color: white;
+    color: #0095f6;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-page-body .emojiBtn {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.main-page-body .emojiBtn img {
+    width: 13px;
+    margin-top: 3px;
+    margin-left: -3px;
+}
+
+
+
+
+
+/* Left SideBar content*/
+
+
+.main-page-body .right-sidebar {
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    margin-top: -140px;
+}
+
+.main-page-body .post-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.main-page-body .likes-amount {
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-page-body .profile-section {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.main-page-body .autor-comment {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.main-page-body .autor-comment span {
+    cursor: pointer;
+}
+
+.main-page-body .comment-translation {
+    margin-top: -7px;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+.main-content .view-comments {
+    margin-top: -7px;
+    color: #8e8e8e;
+    cursor: pointer;
+}
+
+.main-page-body .autor-comment span {
+    font-weight: bold;
+}
+
+.main-page-body .right-sidebar .profile-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.main-page-body .profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 115px;
+}
+
+.main-page-body .right-sidebar .username {
+    font-weight: bold;
+    color: #262626;
+    font-size: 13px;
+}
+
+.main-page-body .fullname {
+    color: #8e8e8e;
+    font-size: 14px;
+    margin-top: 2px;
+}
+
+.main-page-body .switch-link {
+    color: #0095f6;
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
+.main-page-body .suggestions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main-page-body .suggestions-header span {
+    font-weight: bold;
+    color: #8e8e8e;
+    font-size: 13px;
+}
+
+.main-page-body .see-all {
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+
+.main-page-body .suggestions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-page-body .suggestion {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.main-page-body .suggestion img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.main-page-body .suggestion-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-page-body .suggestion-info .username {
+    font-weight: bold;
+    color: #262626;
+    display: block;
+}
+
+.main-page-body .suggestion-info .followed-by {
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+.main-page-body .follow-btn {
+    color: #0095f6;
+
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.main-page-body .side-footer {
+    width: 300px;
+    font-size: 12px;
+    margin-top: 30px;
+    color: #8e8e8e88;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.main-page-body .side-footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-left: -5px;
+}
+
+.main-page-body .side-footer-links li {
+    margin: 0 5px;
+}
+
+.main-page-body .side-footer-links a {
+    color: #8e8e8e88;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+/* Story Section */
+
+
+.story-section {
+    max-width: 660px;
+    margin-left: 13%;
+    margin-top: -10px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding: 15px 0;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+}
+
+
+.story {
+    display: flex;
+    flex-direction: column;
+    /* Aligns items vertically */
+    align-items: center;
+    max-width: 70px;
+}
+
+
+.story-border {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(255, 209, 0, 1) 0%, rgba(250, 17, 17, 1) 50%, rgba(240, 83, 250, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-pic {
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+
+}
+
+
+
+.story-username {
+    font-size: 12px;
+    color: #262626;
+}
+
+/* Adjust main content width */
+.main-page-body .main-content {
+    margin-left: 275px;
+    /* Adjust based on the sidebar width */
+}
