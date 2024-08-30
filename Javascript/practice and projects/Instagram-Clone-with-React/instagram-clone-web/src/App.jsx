@@ -2,9 +2,11 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './component/login_components/Login.jsx';
 import ForgotPass from './component/forgotPassword_components/ForgotPassword.jsx';
-import LoginBoxPage from './component/login_components/LoginBoxPage.jsx'
-import SignUp from './component/signUp_components/SignUp.jsx'
-import MainPage from './component/Main_Page/MainPage.jsx'
+import LoginBoxPage from './component/login_components/LoginBoxPage.jsx';
+import SignUp from './component/signUp_components/SignUp.jsx';
+import AllMainPage from './component/Main_Page/AllMainPage.jsx';
+import Explore from './component/Main_Page/Explore.jsx';
+import Home from './component/Main_Page/Home.jsx';
 
 function App() {
     return (
@@ -18,10 +20,18 @@ function App() {
                 <Route path="/signUpBtn" element={<SignUp />} />
                 <Route path='/log-in' element={<LoginBoxPage />} />
                 <Route path='/create-account-link' element={<SignUp />} />
-                <Route path='/logInBtn' element={<MainPage />} />
+                <Route path='/logInBtn' element={<AllMainPage />} />
+                {/* Main page routes */}
+                <Route element={<AllMainPage />}>
+
+                    <Route path="home" element={<Home />} />
+                    <Route path="explore" element={<Explore />} />
+                    {/* Add more routes as needed */}
+                </Route>
             </Routes>
         </Router>
     );
 }
 
 export default App;
+
