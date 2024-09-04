@@ -1,0 +1,113 @@
+.main-page-body .sidebar {
+    width: 295px;
+    border-right: 1px solid #dbdbdb;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: 0.3s;
+
+}
+
+.main-page-body .sidebar .logo {
+    height: 30px;
+    margin-bottom: 45px;
+}
+
+.main-page-body .sidebar .logo img {
+    width: 105px;
+    margin-bottom: 45px;
+    display: block;
+    margin-left: 0;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.main-page-body .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    margin-top: -5px;
+}
+
+.main-page-body .sidebar nav ul li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    height: 45px;
+    width: 300px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    margin-left: -6px;
+    border-radius: 10px;
+}
+
+.main-page-body .sidebar nav ul li a:focus {
+    font-weight: 600;
+}
+
+.main-page-body .sidebar nav ul li a:hover {
+    background-color: #7575751e;
+    transition: 0.3s;
+}
+
+.main-page-body .sidebar nav ul li a:hover img {
+    transform: scale(1.1);
+}
+
+.main-page-body .sidebar nav ul li a img {
+    width: 22px;
+    height: 22px;
+    margin-right: 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.main-page-body .sidebar nav ul li a .profile-avatar {
+    width: 26px;
+    height: 26px;
+    margin-left: -4px;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: #8e8e8e7a;
+    cursor: pointer;
+}
+
+.main-page-body .sidebar nav .bottom-navbar {
+    margin-top: 250px;
+}
+
+
+/* /////////////// Closing Side bar ////////////*/
+
+.main-page-body .sidebar.closed {
+    width: 33px;
+    border-color: #8e8e8e2f;
+}
+
+.main-page-body .sidebar .closeSidebar {
+    display: inline-block;
+    transition: opacity 0.3s;
+}
+
+.main-page-body .sidebar.closed .closeSidebar {
+    opacity: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+.main-page-body .sidebar.closed .logo {
+    text-align: center;
+
+}
+
+.main-page-body .sidebar.closed nav ul li a {
+    width: 30px;
+}
+
+#search,
+#notifications,
+#create {
+    cursor: pointer;
+}

@@ -1,0 +1,51 @@
+.story-section {
+    max-width: 660px;
+    margin-left: 13%;
+    margin-top: -10px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding: 15px 0;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+}
+
+
+.story {
+    display: flex;
+    flex-direction: column;
+    /* Aligns items vertically */
+    align-items: center;
+    max-width: 70px;
+}
+
+
+.story-border {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(255, 209, 0, 1) 0%, rgba(250, 17, 17, 1) 50%, rgba(240, 83, 250, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.story-pic {
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+
+}
+
+.story-username {
+    font-size: 12px;
+    color: #262626;
+}
+
+/* Adjust main content width */
+.main-page-body .main-content {
+    margin-left: 275px;
+}

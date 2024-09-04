@@ -7,6 +7,8 @@ import SignUp from './component/signUp_components/SignUp.jsx';
 import AllMainPage from './component/Main_Page/AllMainPage.jsx';
 import Explore from './component/Main_Page/Explore.jsx';
 import Home from './component/Main_Page/Home.jsx';
+import Reels from './component/Main_Page/Reels.jsx';
+import Messages from './component/Main_Page/Messages.jsx';
 
 function App() {
     return (
@@ -26,6 +28,8 @@ function App() {
 
                     <Route path="home" element={<Home />} />
                     <Route path="explore" element={<Explore />} />
+                    <Route path="reels" element={<Reels />} />
+                    <Route path="messages" element={<Messages />} />
                     {/* Add more routes as needed */}
                 </Route>
             </Routes>

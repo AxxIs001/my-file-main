@@ -22,12 +22,12 @@ function Feed() {
                         <span><img src="/src/component/Main_Page/inst icons/heart-white.png" alt="" className="heart-white" /></span>
                         <span><img src="/src/component/Main_Page/inst icons/chat.png" alt="" className="sendBtn-popup" /></span>
                         <span><img src="/src/component/Main_Page/inst icons/send.png" alt="" className="sendBtn" /></span>
-                        <span><img src="/src/component/Main_Page/inst icons/bookmark-white.png" alt="" className="bookmarkBtn" /></span>
+                        <span><img src="/src/component/Main_Page/inst icons/bookmark.png" alt="" className="bookmarkBtn" /></span>
                     </div>
                     <span className="likes-amount"> 10 likes</span>
                     <div className="autor-comment">
                         <p><span>confinonbe </span>A lion pair will mate every 20 minutes for 4 days and nights, with each session lasting 1 minute! </p>
-                        <p className="comment-translation">See transation</p>
+                        <p className="comment-translation">See translation</p>
                         <p className="view-comments">View all 26 comments </p>
                     </div>
 
@@ -58,13 +58,13 @@ function Feed() {
                         <span><img src="/src/component/Main_Page/inst icons/heart-white.png" alt="" className="heart-white" /></span>
                         <span><img src="/src/component/Main_Page/inst icons/chat.png" alt="" /></span>
                         <span><img src="/src/component/Main_Page/inst icons/send.png" alt="" /></span>
-                        <span><img src="/src/component/Main_Page/inst icons/bookmark-white.png" alt="" className="bookmarkBtn" /></span>
+                        <span><img src="/src/component/Main_Page/inst icons/bookmark.png" alt="" className="bookmarkBtn" /></span>
 
                     </div>
                     <span className="likes-amount"> 10 likes</span>
                     <div className="autor-comment">
                         <p><span>confinonbe </span>A lion pair will mate every 20 minutes for 4 days and nights, with each session lasting 1 minute! </p>
-                        <p className="comment-translation">See transation</p>
+                        <p className="comment-translation">See translation</p>
                         <p className="view-comments">View all 26 comments </p>
                     </div>
 
@@ -97,12 +97,12 @@ function Feed() {
                         <span><img src="/src/component/Main_Page/inst icons/heart-white.png" alt="" className="heart-white" /></span>
                         <span><img src="/src/component/Main_Page/inst icons/chat.png" alt="" /></span>
                         <span><img src="/src/component/Main_Page/inst icons/send.png" alt="" /></span>
-                        <span><img src="/src/component/Main_Page/inst icons/bookmark-white.png" alt="" className="bookmarkBtn" /></span>
+                        <span><img src="/src/component/Main_Page/inst icons/bookmark.png" alt="" className="bookmarkBtn" /></span>
                     </div>
                     <span className="likes-amount"> 10 likes</span>
                     <div className="autor-comment">
                         <p><span>confinonbe </span>A lion pair will mate every 20 minutes for 4 days and nights, with each session lasting 1 minute! </p>
-                        <p className="comment-translation">See transation</p>
+                        <p className="comment-translation">See translation</p>
                         <p className="view-comments">View all 26 comments </p>
                     </div>
 
