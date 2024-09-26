@@ -11,6 +11,15 @@ function Messages() {
 
     function closeModalBtn() {
         document.querySelector(".modal-overlay").style.display = "none";
+
+    }
+
+    function openSwitchPopup() {
+        document.querySelector(".switch-accounts").style.display = "flex";
+    }
+
+    function closeSwitchPopup() {
+        document.querySelector(".switch-accounts").style.display = "none";
     }
 
     return (
@@ -19,7 +28,7 @@ function Messages() {
                 <div className="message-leftBorder">
                     <header className="message-header">
                         <div className="user-info">
-                            <span className="username">confinonbe <img src="/src/component/Main_Page/inst icons/down-arrow.png" alt="" /></span>
+                            <span className="username">confinonbe <img src="/src/component/Main_Page/inst icons/down-arrow.png" alt="" onClick={openSwitchPopup} /></span>
                             <button className="new-message-button" onClick={openModalBtn}>
                                 <img src="/src/component/Main_Page/inst icons/new-message.png" alt="New Message" />
                             </button>
@@ -73,7 +82,7 @@ function Messages() {
                 <div className="modal-container">
                     <div className="modal-header">
                         <p>New message</p>
-                        <button className="close-button" onClick={closeModalBtn}>X</button>
+                        <button className="close-button" onClick={closeModalBtn}>✖</button>
                     </div>
                     <div className="modal-body">
                         <label htmlFor="search">To: </label>
@@ -92,14 +101,14 @@ function Messages() {
                 <div className="switch-container">
                     <div className="switch-header">
                         <p>Switch accounts</p>
-                        <button className="close-button" onClick={closeModalBtn}>X</button>
+                        <button className="close-button" onClick={closeSwitchPopup}>✖</button>
                     </div>
                     <div className="switch-body">
-                        <span className="username">confinonbe <img src="/src/component/Main_Page/inst icons/down-arrow.png" alt="" /></span>
+                        <span className="switch-username"> <img src="/src/component/Main_Page/inst icons/avatar.png" alt="Avatar" />confinonbe <img className="switch-check" src="/src/component/Main_Page/inst icons/checked.png" alt="" /></span>
                     </div>
 
                     <div className="switch-footer">
-                        <button className="switch-button" disabled>Chat</button>
+                        <button className="switch-button">Log into an Existing Account</button>
                     </div>
                 </div>
             </div>

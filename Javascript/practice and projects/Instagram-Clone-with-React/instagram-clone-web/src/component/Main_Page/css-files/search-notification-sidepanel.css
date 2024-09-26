@@ -1,6 +1,6 @@
 .sidepanel {
     height: 900px;
-    z-index: 2;
+    z-index: 1;
     width: 0;
     position: fixed;
     top: 0px;
@@ -87,10 +87,9 @@
 
 .notification {
     height: 100vh;
-    z-index: 1;
     width: 0;
     position: fixed;
-    z-index: 2;
+    z-index: 1;
     top: 0px;
     left: 75px;
     padding-top: 10px;

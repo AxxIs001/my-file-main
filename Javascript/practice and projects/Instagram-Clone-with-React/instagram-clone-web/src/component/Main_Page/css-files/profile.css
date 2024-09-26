@@ -1,0 +1,188 @@
+/* Overall body container */
+.profile-body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+
+}
+
+/* Main container */
+.profile-container {
+    width: 70%;
+    margin-top: 12px;
+}
+
+/* Profile content area */
+.profile-content {
+    padding: 20px;
+}
+
+
+
+/* Profile information section */
+.profile-information {
+    display: flex;
+    margin-left: 70px;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 70px;
+}
+
+.profile-picture {
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-picture img {
+    width: 100%;
+
+}
+
+.profile-details {
+    display: flex;
+    align-items: center;
+}
+
+.profile-details p {
+    margin: 0;
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.profile-details button {
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ececec;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+.profile-details img {
+    width: 22px;
+    cursor: pointer;
+}
+
+/* Profile stats section */
+.profile-stats {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.profile-stats p {
+    margin-top: 0;
+}
+
+.profile-stats p span {
+    font-weight: 500;
+}
+
+.profile-stats .followers,
+.profile-stats .following {
+    cursor: pointer;
+}
+
+
+
+
+.profile-name p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.post-saved-tagged {
+    margin-top: 10px;
+}
+
+
+.post-saved-tagged span {
+    margin-right: 50px;
+    color: #8e8e8e;
+    border-top: 1px solid #000000;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.post-saved-tagged span img {
+    width: 10px;
+    margin-right: 10px;
+}
+
+
+/* Section for sharing photos */
+.profile-photo-share {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -20px;
+    width: 92%;
+
+}
+
+.profile-photo-share h1 {
+    font-size: 30px;
+    margin: 10px 0;
+    margin-bottom: -5px;
+}
+
+.profile-photo-share p {
+    font-size: 14px;
+}
+
+
+.profile-photo-share button {
+
+    border: none;
+    color: #0095f6;
+    background-color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+.profile-photo-share-background {
+    margin-top: 60px;
+
+}
+
+.plus-icon {
+    width: 83%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px;
+    border-bottom: 1px solid #8e8e8e62;
+}
+
+.plus-icon img {
+    width: 90px;
+}
+
+.plus-icon span {
+    cursor: pointer;
+}
+
+.plus-icon p {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.profile-footer {
+    margin-left: -50px;
+}

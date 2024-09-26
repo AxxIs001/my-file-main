@@ -48,6 +48,7 @@ export function LoginPage() {
     };
 
     const handleLogIn = () => {
+
         navigate('/logInBtn');
     };
 
@@ -58,7 +59,7 @@ export function LoginPage() {
         if (inputField.value === '') {
             showHideBtn.style.display = "none";
         } else {
-            showHideBtn.style.display = "block";  // or "inline" depending on your needs
+            showHideBtn.style.display = "block";
         }
         toggleDisabled();
     }
@@ -124,6 +125,7 @@ export function LoginPage() {
         </div>
     );
 }
+
 
 export function SignUpLink() {
     const navigate = useNavigate();

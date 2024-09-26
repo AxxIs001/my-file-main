@@ -225,7 +225,7 @@
     height: 600px;
     display: flex;
     flex-direction: column;
-    z-index: 1000;
+    z-index: 2;
 }
 
 
@@ -311,11 +311,6 @@
 
 
 
-
-
-
-
-
 .switch-accounts {
     position: fixed;
     top: 0;
@@ -323,7 +318,7 @@
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.85);
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 
@@ -347,20 +342,38 @@
 }
 
 .switch-header p {
-    margin-left: 150px;
-    margin-right: 90px;
+    margin-left: 140px;
+    margin-right: 100px;
 }
 
 
 .switch-body {
     display: flex;
-
+    align-items: flex-start;
     padding: 10px;
     margin-top: 5px;
     margin-left: 5px;
     min-height: 130px;
 }
 
+.switch-username {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.switch-username img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.switch-username .switch-check {
+    width: 25px;
+    margin-left: 200px;
+    display: block;
+    cursor: pointer;
+}
 
 .switch-footer {
     padding: 10px 15px;
@@ -369,12 +382,11 @@
 }
 
 .switch-button {
-    background-color: #ADD8E6;
-
-    color: #fff;
+    background-color: white;
+    color: #10aadd;
     border: none;
     border-radius: 5px;
     padding: 8px 16px;
-    cursor: not-allowed;
-
+    font-size: 14px;
+    cursor: pointer;
 }

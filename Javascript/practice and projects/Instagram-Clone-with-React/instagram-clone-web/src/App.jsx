@@ -9,6 +9,7 @@ import Explore from './component/Main_Page/Explore.jsx';
 import Home from './component/Main_Page/Home.jsx';
 import Reels from './component/Main_Page/Reels.jsx';
 import Messages from './component/Main_Page/Messages.jsx';
+import Profile from './component/Main_Page/Profile.jsx';
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
                 <Route path='/log-in' element={<LoginBoxPage />} />
                 <Route path='/create-account-link' element={<SignUp />} />
                 <Route path='/logInBtn' element={<AllMainPage />} />
+                <Route path='/logOut' element={<Login />} />
                 {/* Main page routes */}
                 <Route element={<AllMainPage />}>
 
@@ -30,6 +32,7 @@ function App() {
                     <Route path="explore" element={<Explore />} />
                     <Route path="reels" element={<Reels />} />
                     <Route path="messages" element={<Messages />} />
+                    <Route path="profile" element={<Profile />} />
                     {/* Add more routes as needed */}
                 </Route>
             </Routes>

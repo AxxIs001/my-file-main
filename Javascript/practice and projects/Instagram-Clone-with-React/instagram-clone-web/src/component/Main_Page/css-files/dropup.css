@@ -1,0 +1,60 @@
+.menu-container {
+    position: fixed;
+    display: inline-block;
+    bottom: 70px;
+    left: 10px;
+    z-index: 3;
+}
+
+
+.dropup-content {
+    display: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    min-width: 270px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropup-content a {
+    color: black;
+    padding: 18px 16px;
+    text-decoration: none;
+    display: flex;
+    font-size: 14px;
+}
+
+.dropup-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.menu-container:hover .dropup-content {
+    display: block;
+}
+
+.dropup-up {
+    border-bottom: 5px solid #ececec;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.dropup-up a {
+    display: flex;
+    align-items: center;
+    margin-top: -5px;
+}
+
+.dropup-up img {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.switchs {
+    border-bottom: 1px solid #ececec;
+}
+
+.logOut {
+    cursor: pointer;
+}

@@ -3,6 +3,7 @@ import { GetTheApp, Footer } from "../login_components/LoginPage";
 import { useNavigate } from 'react-router-dom';
 import "./signUp.css"
 
+
 function SignUp() {
 
     const navigate = useNavigate();
@@ -34,6 +35,8 @@ function SignUp() {
         }
     };
 
+
+
     return (
         <div >
             <div className='signUp-body'>
@@ -57,7 +60,7 @@ function SignUp() {
                         </form>
                         <p className="terms">People who use our service may have uploaded your contact information to Instagram. <a href="https://www.facebook.com/help/instagram/261704639352628">Learn More</a></p>
                         <p className="terms">By signing up, you agree to our <a href="https://help.instagram.com/581066165581870/?locale=en_US">Terms</a>, <a href="https://www.facebook.com/privacy/policy">Privacy Policy</a> and <a href="https://privacycenter.instagram.com/policies/cookies/">Cookies Policy</a>.</p>
-                        <button type="submit" className="signup-btn">Sign up</button>
+                        <button type="submit" className="signup-btn" onClick={() => signup(inputs)}>Sign up</button>
                     </div>
                     <div className="login-redirect">
                         <p>Have an account? <a className='log-in' onClick={handleLogIn}>Log in</a></p>

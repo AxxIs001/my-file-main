@@ -4,7 +4,11 @@ import '/src/component/Main_Page/css-files/search-notification-sidepanel.css'
 import '/src/component/Main_Page/css-files/sidebar.css'
 import '/src/component/Main_Page/css-files/story-section.css'
 import '/src/component/Main_Page/css-files/rightside-suggestion.css'
-import { Link } from "react-router-dom";
+import '/src/component/Main_Page/css-files/newPost.css';
+import '/src/component/Main_Page/css-files/dropup.css'
+import { Link, useNavigate } from "react-router-dom";
+import NewPost from "./NewPost";
+
 
 function LeftSideBar() {
     const [isSidebarOpen, setSidebarOpen] = useState(true);
@@ -30,6 +34,27 @@ function LeftSideBar() {
 
 
 
+    // Change size of Instagram Icon
+    const instImgMain = document.querySelector(".instImg-main");
+
+    if (instImgMain) {
+        if (isSidebarOpen === true) {
+            instImgMain.src = "https://i.imgur.com/zqpwkLQ.png";
+            instImgMain.style = "width: 105px; margin-left: 0; transition: 0.3s ease-in-out;";
+
+        }
+        else {
+            instImgMain.src = "/src/component/Main_Page/inst icons/inst-icon.png";
+            instImgMain.style = "width: 22px; height: 22px; margin-left: 5px;";
+        }
+
+        const logo = document.querySelector(".logo");
+        if (logo && !isSidebarOpen) {
+            logo.style = "height: 30px; margin-bottom: 45px;";
+        }
+    }
+
+
 
 
     const handleButtonClick = (buttonName) => {
@@ -40,28 +65,17 @@ function LeftSideBar() {
             }
 
 
-
             if (isSidebarOpen || activeButton === 'messages') {
                 // Open side panel
                 document.getElementById("mySidepanel").style.width = "395px";
 
-
-                //Change the Logo Size 
-                document.querySelector(".instImg-main").src = "/src/component/Main_Page/inst icons/inst-icon.png";
-                document.querySelector(".logo").style = "height: 30px; margin-bottom: 45px;";
-                document.querySelector(".instImg-main").style = "width: 22px; height: 22px; margin-left: 5px;";
-
             } else {
-
-                //Change the Logo Size 
-                document.querySelector(".instImg-main").src = "https://i.imgur.com/zqpwkLQ.png";
-                document.querySelector(".instImg-main").style = "width: 105px; margin-left: 0; transition: 0.3s ease-in-out;";
                 // Close the side panel
                 document.getElementById("mySidepanel").style.width = "0";
 
             }
 
-            //When is Notification side Panel is opened
+            //When is Notification sidePanel is opened
             if (activeButton === 'notifications') {
                 setSidebarOpen(false);
                 document.getElementById("myNotification").style.width = "0";
@@ -77,11 +91,6 @@ function LeftSideBar() {
             // Close the side panel
             document.getElementById("mySidepanel").style.width = "0";
             document.getElementById("myNotification").style.width = "0";
-
-            //Change the Logo Size 
-            document.querySelector(".instImg-main").src = "/src/component/Main_Page/inst icons/inst-icon.png";
-            document.querySelector(".logo").style = "height: 30px; margin-bottom: 45px;";
-            document.querySelector(".instImg-main").style = "width: 22px; height: 22px; margin-left: 5px;";
         }
 
 
@@ -97,15 +106,7 @@ function LeftSideBar() {
             if (isSidebarOpen || activeButton === 'messages') {
                 // Open side panel
                 document.getElementById("myNotification").style.width = "395px";
-                //Change the Logo Size
-                document.querySelector(".instImg-main").src = "/src/component/Main_Page/inst icons/inst-icon.png";
-                document.querySelector(".logo").style = "height: 30px; margin-bottom: 45px;";
-                document.querySelector(".instImg-main").style = "width: 22px; height: 22px; margin-left: 5px;";
-
             } else {
-                //Change the Logo Size /
-                document.querySelector(".instImg-main").src = "https://i.imgur.com/zqpwkLQ.png";
-                document.querySelector(".instImg-main").style = "width: 105px; margin-left: 0; transition: 0.3s ease-in-out;";
                 // Close the side panel
                 document.getElementById("myNotification").style.width = "0";
             }
@@ -116,14 +117,13 @@ function LeftSideBar() {
                 document.getElementById("mySidepanel").style.width = "0";
                 document.getElementById("myNotification").style.width = "395px";
             }
-        } else {
+        }
+
+        else {
             // Handle other buttons (home, explore, reels)
             if (!isSidebarOpen) {
                 setSidebarOpen(true);
             }
-            //Change the Logo Size 
-            document.querySelector(".instImg-main").src = "https://i.imgur.com/zqpwkLQ.png";
-            document.querySelector(".instImg-main").style = "width: 105px; margin-left: 0; transition: 0.3s ease-in-out;";
             document.getElementById("mySidepanel").style.width = "0";
             document.getElementById("myNotification").style.width = "0";
         }
@@ -134,8 +134,20 @@ function LeftSideBar() {
 
 
 
+    //Show Create New Post
+    function openCreateNewPost() {
+        document.querySelector(".NewPost-overlay").style.display = "flex";
+
+    }
 
 
+    //Log Out
+
+    const navigate = useNavigate();
+
+    const handleLogOut = () => {
+        navigate('/logOut');
+    };
 
 
 
@@ -212,7 +224,7 @@ function LeftSideBar() {
                                 <span className="closeSidebar">Notifications</span>
                             </a>
                         </li>
-                        <li id="create">
+                        <li id="create" onClick={openCreateNewPost}>
                             <a>
                                 <img
                                     src="/src/component/Main_Page/inst icons/more.png"
@@ -244,7 +256,16 @@ function LeftSideBar() {
                                 <span className="closeSidebar">Threads</span>
                             </a>
                         </li>
-                        <li>
+                        <li className="more-btn" onClick={() => {
+                            const dropupContent = document.querySelector(".dropup-content");
+
+                            if (dropupContent.style.display === "none" || dropupContent.style.display === "") {
+                                dropupContent.style.display = "block";
+                            } else {
+                                dropupContent.style.display = "none";
+                            }
+
+                        }}>
                             <a href="#">
                                 <img
                                     src="/src/component/Main_Page/inst icons/menu-icon-png-3-lines-11552744388mj3lxt5xwv.png"
@@ -253,9 +274,12 @@ function LeftSideBar() {
                                 <span className="closeSidebar">More</span>
                             </a>
                         </li>
+
                     </ul>
                 </nav>
             </aside>
+
+
 
             {/*Search Side Panel*/}
             <div id="mySidepanel" className="sidepanel">
@@ -386,6 +410,25 @@ function LeftSideBar() {
                             </li>
                         </ul>
                     </div>
+                </div>
+            </div>
+
+
+            {/*Create New Post  */}
+            <NewPost />
+
+            {/*Dropup */}
+            <div class="menu-container">
+                <div class="dropup-content">
+                    <div className="dropup-up">
+                        <a href="#"><img src="/src/component/Main_Page/inst icons/setting.png" alt="" />Settings</a>
+                        <a href="#"><img src="/src/component/Main_Page/inst icons/setting.png" alt="" />Your activity</a>
+                        <a href="#"><img src="/src/component/Main_Page/inst icons/setting.png" alt="" />Saved</a>
+                        <a href="#"><img src="/src/component/Main_Page/inst icons/setting.png" alt="" />Switch appearance</a>
+                        <a href="#"><img src="/src/component/Main_Page/inst icons/setting.png" alt="" />Report a problem</a>
+                    </div>
+                    <a href="#" className="switchs" >Switch accounts</a>
+                    <a className="logOut" onClick={handleLogOut}>Log out</a>
                 </div>
             </div>
 
